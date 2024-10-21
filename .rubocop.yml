@@ -1,0 +1,19 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-rake  
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.0
+  Exclude:
+    - 'spec/dummy/db/schema.rb'
+    - 'spec/dummy/config/**/*'
+    - 'bin/rails'
+    - 'Guardfile'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
